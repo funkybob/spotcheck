@@ -22,6 +22,7 @@ class Template(Model):
 
 class Page(Model):
     path = attrs.StringAttr()  # PathAttr?
+    template = attrs.StringAttr()
 
 
 TemplateStorage = DynamoStore(Template, hash_key='name', table=conf.TEMPLATE_TABLE)
