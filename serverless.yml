@@ -50,6 +50,10 @@ custom:
         - "!*dist-info/**"
 
 functions:
+  page:
+    handler: views.default
+    events:
+      - http: GET {path+}
 
 resources:
   Resources:
