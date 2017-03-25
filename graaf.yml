@@ -1,0 +1,7 @@
+generators:
+  - name: graaf.jekyll.JekyllGenerator
+  - name: graaf.scss.SassGenerator
+    include_paths:
+      - node_packages/bulma/sass/
+  - name: graaf.simple_md.SimpleMarkdown
+
