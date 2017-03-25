@@ -3,7 +3,8 @@ from paws.response import response
 
 from stencil import Context
 
-from .models import PageStorage, TemplateStorage
+from models import PageStorage, TemplateStorage
+import tags  # NOQA
 
 
 @http_handler
