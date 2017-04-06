@@ -7,6 +7,16 @@ from models import PageStorage, TemplateStorage
 import tags  # NOQA
 
 
+def slots_for_template(tmpl):
+    '''
+    Get a set of slot names for this template.
+    '''
+    return {
+        tag.name
+        for tag in tmpl.nodes_by_type(tags.SlotNode)
+    }
+
+
 @http_handler
 def default(request, path):
     try:
