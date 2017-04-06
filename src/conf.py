@@ -1,8 +1,8 @@
-from paws.conf import Conf as BaseConf
+from paws.conf import Conf
 
 
-class Conf(BaseConf):
+class Config(Conf):
     pass
 
 
-conf = Conf()
+conf = Config()
